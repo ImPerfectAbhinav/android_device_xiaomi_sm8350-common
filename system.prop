@@ -20,9 +20,15 @@ debug.cpurend.vsync=false
 # Display
 debug.force_no_blanking=true
 
+#Prevent the deactivation of preloading graphic lib
+ro.zygote.disable_gl_preload=false
+
 # Graphics
 debug.sf.disable_backpressure=1
 debug.sf.enable_hwc_vds=1
+debug.composition.type=gpu
+persist.sys.composition.type=gpu
+ro.hwui.use_vulkan=false
 
 # IMS
 persist.dbg.volte_avail_ovr=1
